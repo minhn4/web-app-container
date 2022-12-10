@@ -14,7 +14,7 @@ Open `Cloud Shell` (top-right corner), then type:
 
 `git clone https://github.com/quickhair/web-app-container.git`
 
-`cd web-app-container/`
+`cd web-app-container`
 
 `docker build -t gcr.io/minh-sandbox/web-app-container .`
 
