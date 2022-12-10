@@ -16,7 +16,7 @@ Open `Cloud Shell` (top-right corner), then type:
 
 `docker build -t gcr.io/minh-sandbox/web-app-container .`
 
-Hit Authorize and login to your GC account if prompted. Explanation: `gcr.io` is one of the hostnames, `minh-sandbox` is the project ID, see https://cloud.google.com/container-registry/docs/overview for more details.
+Hit Authorize and login to your Google Cloud account if prompted. Explanation: `gcr.io` is one of the hostnames, `minh-sandbox` is the project ID, see https://cloud.google.com/container-registry/docs/overview for more details.
 
 You can check and delete your Docker images with:
 
@@ -28,7 +28,7 @@ You can check and delete your Docker images with:
 
 `docker push gcr.io/minh-sandbox/web-app-container`
 
-You can search for Container Registry in the Google Cloud console and you'll see the `web-app-container` repository you've just pushed. Go inside the repository, you'll see your Docker image(s); you can delete them here if you want to.
+You can search for Container Registry in the GC console and you'll see the `web-app-container` repository you've just pushed. Go inside the repository, you'll see your Docker image(s); you can delete them here if you want to.
 
 ----------------------------------------------------------------------------------------------------
 
