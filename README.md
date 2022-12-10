@@ -48,6 +48,8 @@ By default, Kubernetes Engine will create a node pool of three VMs initially (yo
 
 To deploy a Docker image as an app container, hit `Workloads` tab in the left menu -> `Deploy`. Next up, choose `Existing container image` -> `Select` and then select one of the Docker images stored in the Container Registry -> `Continue`. Finally, name your app (e.g., demo-web-app), choose the cluster you want to deploy (e.g., production-cluster) -> `Deploy`.
 
+Kubernetes Engine will deploy the app in all nodes in the node pool.
+
 ### **_3. Expose the app_**
 
 Now, if you want to access this app from outside, you need to expose it to external traffic -> click `Expose` in the top-right corner. Next, you can change the external port if you want to; otherwise, leave it 80 -> choose `Load balancer` for `Service type` and name your service -> `Expose`.
