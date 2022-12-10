@@ -28,7 +28,7 @@ You can check and delete your Docker images with:
 
 `docker push gcr.io/minh-sandbox/web-app-container`
 
-You can search for Container Registry in the GC console and you'll see the `web-app-container` repository you've just pushed. Go inside the repository, you'll see your Docker image(s); you can delete them here if you want to.
+You can search for Container Registry in the GC console and you'll see the `'web-app-container' repository you've just pushed. Go inside the repository, you'll see your Docker image(s); you can delete them here if you want to.
 
 ----------------------------------------------------------------------------------------------------
 
@@ -38,13 +38,13 @@ You can search for Container Registry in the GC console and you'll see the `web-
 
 In GC console left menu, go to `Compute Engine` and `Kubernetes Engine` tabs and enable them if you haven't done that.
 
-Next up, go to `Clusters` tab in the left menu -> hit `Create` -> `Configure (Standard)` -> name your Kubernetes cluster (e.g., `production-cluster`), choose a zone near you (optional: choose node locations if you want to), choose `Static` for `Control plane version` for now -> `Create`. Wait until the cluster is available.
+Next up, go to `Clusters` tab in the left menu -> hit `Create` -> `Configure (Standard)` -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose `Static` for `Control plane version` for now -> `Create`. Wait until the cluster is available.
 
 By default, `Kubernetes Engine` will create a node pool of three VMs initially (you can create more node pool if needed). You can view these VMs in `Compute Enginer` tab.
 
 ### **_2. Deploy a Docker image stored in Container Registry_**
 
-To deploy a Docker image as an app container, hit `Workloads` tab in the left menu -> `Deploy`. Next up, choose `Existing container image` -> `Select` and then select one of the images stored in the Container Registry -> `Continue`. Finally, name your app (e.g., `demo-web-app`), choose the cluster you want to deploy -> `Deploy`.
+To deploy a Docker image as an app container, hit `Workloads` tab in the left menu -> `Deploy`. Next up, choose `Existing container image` -> `Select` and then select one of the images stored in the Container Registry -> `Continue`. Finally, name your app (e.g., demo-web-app), choose the cluster you want to deploy -> `Deploy`.
 
 ### **_3. Expose the app_**
 
