@@ -16,7 +16,7 @@ Open `Cloud Shell` (top-right corner), then type:
 
 `docker build -t gcr.io/minh-sandbox/web-app-container .`
 
-Hit Authorize and login to your Google Cloud account if prompted. Explanation: gcr.io is one of the hostnames, 'minh-sandbox' is the project ID, see https://cloud.google.com/container-registry/docs/overview for more details.
+Hit Authorize and login to your Google Cloud account if prompted. Explanation: `gcr.io` is one of the hostnames, `minh-sandbox` is the project ID, see https://cloud.google.com/container-registry/docs/overview for more details.
 
 You can check and delete your Docker images with:
 
@@ -28,7 +28,7 @@ You can check and delete your Docker images with:
 
 `docker push gcr.io/minh-sandbox/web-app-container`
 
-You can search for Container Registry in the Google Cloud console and you'll see the 'web-app-container' repository you've just pushed. Go inside the repository, you'll see your Docker image(s); you can delete them here if you want to.
+You can search for Container Registry in the Google Cloud console and you'll see the `web-app-container` repository you've just pushed. Go inside the repository, you'll see your Docker image(s); you can delete them here if you want to.
 
 ----------------------------------------------------------------------------------------------------
 
@@ -36,13 +36,13 @@ You can search for Container Registry in the Google Cloud console and you'll see
 
 ### **_1. Create a Kubernetes cluster_**
 
-In GC console left menu, go to Kubernetes Engine tab -> Clusters and enable it if you haven't done that.
+In GC console left menu, go to `Kubernetes Engine` tab and enable it if you haven't done that.
 
-Next up, hit Create -> Configure (Standard) -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose Static for Control plane version for now -> Create. Wait until the cluster is available.
+Next up, go to `Clusters` in the left menu -> hit `Create` -> `Configure (Standard)` -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose `Static` for Control plane version for now -> `Create`. Wait until the cluster is available.
 
 ### **_2. Deploy a Docker image stored in Container Registry_**
 
-To deploy a Docker image as an app container, hit Workloads tab in the left menu -> Deploy. Next up, choose 'Existing container image' -> Select and then select one of the images stored in the Container Registry -> Continue. Finally, name your app (e.g., demo-web-app), choose the cluster you want to deploy -> Deploy.
+To deploy a Docker image as an app container, hit `Workloads` tab in the left menu -> `Deploy`. Next up, choose `Existing container image` -> `Select` and then select one of the images stored in the Container Registry -> `Continue`. Finally, name your app (e.g., `demo-web-app`), choose the cluster you want to deploy -> `Deploy`.
 
 ### **_3. Expose the app_**
 
