@@ -20,4 +20,6 @@ docker build -t gcr.io/minh-sandbox/web-app-container .
 
 docker push gcr.io/minh-sandbox/web-app-container
 
+----------------------------------------------------------------------------------------------------
+
 **_II. Console UI: Kubernetes Engine tutorial_**
