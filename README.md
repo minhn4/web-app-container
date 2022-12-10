@@ -4,7 +4,7 @@
 
 +++++++++++++**_1. Enable and authenticate Container Registry to store Docker images_**+++++++++++++
 
-Open Cloud Shell (top-right corner), then type:
+Open `Cloud Shell` (top-right corner), then type:
 
 `gcloud services enable containerregistry.googleapis.com`
 
