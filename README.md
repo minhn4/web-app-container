@@ -44,7 +44,7 @@ By default, `Kubernetes Engine` will create a node pool of three VMs initially (
 
 ### **_2. Deploy an app_**
 
-To deploy a Docker image as an app container, hit `Workloads` tab in the left menu -> `Deploy`. Next up, choose `Existing container image` -> `Select` and then select one of the images stored in the Container Registry -> `Continue`. Finally, name your app (e.g., demo-web-app), choose the cluster you want to deploy (e.g., production-cluster) -> `Deploy`.
+To deploy a Docker image as an app container, hit `Workloads` tab in the left menu -> `Deploy`. Next up, choose `Existing container image` -> `Select` and then select one of the Docker images stored in the Container Registry -> `Continue`. Finally, name your app (e.g., demo-web-app), choose the cluster you want to deploy (e.g., production-cluster) -> `Deploy`.
 
 ### **_3. Expose the app_**
 
