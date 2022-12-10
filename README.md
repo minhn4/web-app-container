@@ -13,7 +13,7 @@ git clone https://github.com/quickhair/web-app-container.git
 
 docker build -t gcr.io/minh-sandbox/web-app-container .
 
-(gcr.io is one of the hostnames (https://cloud.google.com/container-registry/docs/overview), 'minh-sandbox' is the project ID)
+(gcr.io is one of the hostnames, 'minh-sandbox' is the project ID, see https://cloud.google.com/container-registry/docs/overview for more details.)
 
 +++++++++++++++++**_Push the Docker image to Container Registry_**+++++++++++++++++
 
