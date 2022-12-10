@@ -1,8 +1,8 @@
 # Kubernetes Engine Instruction
 
-## **I. Cloud Shell commands for Docker images**
+## **I. `Cloud Shell` commands for Docker images**
 
-### **_1. Enable and authenticate Container Registry to store Docker images_**
+### **_1. Enable and authenticate `Container Registry` to store Docker images_**
 
 Open `Cloud Shell` (top-right corner), then type:
 
@@ -26,15 +26,15 @@ You can check and delete your Docker images with:
 
 `docker rmi gcr.io/minh-sandbox/web-app-container`
 
-### **_3. Push the Docker image to Container Registry_**
+### **_3. Push the Docker image to `Container Registry`_**
 
 `docker push gcr.io/minh-sandbox/web-app-container`
 
-You can search for Container Registry in the console search bar and you'll see the 'web-app-container' repository you've just pushed. Go inside the repository, you'll see your Docker images; you can delete them here if you want to.
+You can search for `Container Registry` in the console search bar and you'll see the 'web-app-container' repository you've just pushed. Go inside the repository, you'll see your Docker images; you can delete them here if you want to.
 
 ----------------------------------------------------------------------------------------------------
 
-## **II. Google Cloud Console: Kubernetes Engine tutorial**
+## **II. Google Cloud Console: `Kubernetes Engine` tutorial**
 
 ### **_1. Create a Kubernetes cluster_**
 
