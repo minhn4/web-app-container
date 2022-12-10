@@ -36,7 +36,7 @@ You can search for Container Registry in the GC console and you'll see the 'web-
 
 ### **_1. Create a Kubernetes cluster_**
 
-In GC console left menu, go to `Compute Engine` and `Kubernetes Engine` tabs and enable them if you haven't done that.
+In the console left menu, go to `Compute Engine` and `Kubernetes Engine` tabs and enable them if you haven't done that.
 
 Next up, go to `Clusters` tab in the left menu -> hit `Create` -> `Configure (Standard)` -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose `Static` for `Control plane version` for now -> `Create`. Wait until the cluster is available.
 
