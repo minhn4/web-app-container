@@ -32,9 +32,9 @@ You can search for Container Registry in the Google Cloud console and you'll see
 
 ----------------------------------------------------------------------------------------------------
 
-## **_II. Google Cloud Console: Kubernetes Engine tutorial_**
+## **II. Google Cloud Console: Kubernetes Engine tutorial**
 
-+++++++++++++++++++++**_1. Create a Kubernetes cluster_**+++++++++++++++++++++++++++++++++
+### **_1. Create a Kubernetes cluster_**
 
 In GC console left menu, go to Kubernetes Engine tab -> Clusters and enable it if you haven't done that.
 
