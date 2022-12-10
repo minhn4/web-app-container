@@ -16,11 +16,13 @@ git clone https://github.com/quickhair/web-app-container.git
 
 docker build -t gcr.io/minh-sandbox/web-app-container .
 
+Hit Authorize and login to your Goole Clous account if prompted.
+
 gcr.io is one of the hostnames, 'minh-sandbox' is the project ID, see https://cloud.google.com/container-registry/docs/overview for more details. You can check and delete your Docker images with:
 
 docker images
 
-docker rmi 
+docker rmi gcr.io/minh-sandbox/web-app-container
 
 +++++++++++++++++**_3. Push the Docker image to Container Registry_**+++++++++++++++++
 
