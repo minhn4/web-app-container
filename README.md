@@ -1,6 +1,6 @@
 # Kubernetes Engine Instruction
 
-**_I. Cloud Shell commands for Docker images_**
+## **_I. Cloud Shell commands for Docker images_**
 
 +++++++++++++**_1. Enable and authenticate Container Registry to store Docker images_**+++++++++++++
 
@@ -32,7 +32,7 @@ You can search for Container Registry in the Google Cloud console and you'll see
 
 ----------------------------------------------------------------------------------------------------
 
-**_II. Google Cloud Console: Kubernetes Engine tutorial_**
+## **_II. Google Cloud Console: Kubernetes Engine tutorial_**
 
 +++++++++++++++++++++**_1. Create a Kubernetes cluster_**+++++++++++++++++++++++++++++++++
 
