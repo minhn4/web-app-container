@@ -46,4 +46,6 @@ To deploy a Docker image as an app container, hit `Workloads` tab in the left me
 
 ### **_3. Expose the app_**
 
-Now, if you want to access this app from outside, you need to expose it to external traffic -> click `Expose` on the top-right corner. Next, you can change the external port if you want to, otherwise, leave it 80 -> choose `Load balancer` for `Service type` and name your service -> hit `Expose`. GCP will assign an external IP to this app and you can use that IP address to access the app (e.g., from a browser).
+Now, if you want to access this app from outside, you need to expose it to external traffic -> click `Expose` on the top-right corner. Next, you can change the external port if you want to, otherwise, leave it 80 -> choose `Load balancer` for `Service type` and name your service -> `Expose`.
+
+GCP will assign an external IP to this app and you can use that IP address to access the app (e.g., from a browser).
