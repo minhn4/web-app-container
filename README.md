@@ -10,7 +10,7 @@ Open `Cloud Shell` (top-right corner), then type:
 
 `gcloud auth configure-docker`
 
-++++++++++++++++++++**_2. Clone the source code and build a Docker image_**++++++++++++++++++
+### **_2. Clone the source code and build a Docker image_**
 
 `git clone https://github.com/quickhair/web-app-container.git`
 
@@ -24,7 +24,7 @@ You can check and delete your Docker images with:
 
 `docker rmi gcr.io/minh-sandbox/web-app-container`
 
-+++++++++++++++++**_3. Push the Docker image to Container Registry_**+++++++++++++++++
+## **_3. Push the Docker image to Container Registry_**
 
 `docker push gcr.io/minh-sandbox/web-app-container`
 
