@@ -38,7 +38,7 @@ You can search for Container Registry in the Google Cloud console and you'll see
 
 In GC console left menu, go to `Kubernetes Engine` tab and enable it if you haven't done that.
 
-Next up, go to `Clusters` in the left menu -> hit `Create` -> `Configure (Standard)` -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose `Static` for Control plane version for now -> `Create`. Wait until the cluster is available.
+Next up, go to `Clusters` in the left menu -> hit `Create` -> `Configure (Standard)` -> name your Kubernetes cluster (e.g., `production-cluster`), choose a zone near you (optional: choose node locations if you want to), choose `Static` for `Control plane version` for now -> `Create`. Wait until the cluster is available.
 
 ### **_2. Deploy a Docker image stored in Container Registry_**
 
@@ -46,4 +46,4 @@ To deploy a Docker image as an app container, hit `Workloads` tab in the left me
 
 ### **_3. Expose the app_**
 
-Now, if you want to access this app from outside, you need to expose it to external traffic -> click Expose on the top-right corner. Next, you can change the external port if you want to, otherwise, leave it 80 -> choose Load balancer for Service type and name your service -> hit Expose. GCP will assign an external IP to this app and you can use that IP address to access the app (e.g., from a browser).
+Now, if you want to access this app from outside, you need to expose it to external traffic -> click `Expose` on the top-right corner. Next, you can change the external port if you want to, otherwise, leave it 80 -> choose `Load balancer` for `Service type` and name your service -> hit `Expose`. GCP will assign an external IP to this app and you can use that IP address to access the app (e.g., from a browser).
