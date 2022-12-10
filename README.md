@@ -36,4 +36,6 @@ Next up, hit Create -> Configure (Standard) -> name your Kubernetes cluster (e.g
 
 To deploy a Docker image as an app container, hit Workloads tab in the left menu -> Deploy. Next up, choose 'Existing container image' -> Select and then select one of the images stored in the Container Registry -> Continue. Finally, name your app (e.g., demo-web-app), choose the cluster you want to deploy -> Deploy.
 
-Now, if you want to access this app from outside, you need to expose it to external traffic -> click Expose on the top-right corner. Next, you can change the external port if you want to, otherwise, leave it 80 -> choose Load balancer for Service type and name your service -> Expose. GCP will assign an external IP to this app and you can use that IP address to access the app (e.g., from a browser).
+++++++++++++++++++++_**_3. Expose the app_**+++++++++++++++++++++++
+
+Now, if you want to access this app from outside, you need to expose it to external traffic -> click Expose on the top-right corner. Next, you can change the external port if you want to, otherwise, leave it 80 -> choose Load balancer for Service type and name your service -> hit Expose. GCP will assign an external IP to this app and you can use that IP address to access the app (e.g., from a browser).
