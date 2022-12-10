@@ -6,27 +6,27 @@
 
 Open Cloud Shell (top-right corner), then type:
 
-gcloud services enable containerregistry.googleapis.com
+`gcloud services enable containerregistry.googleapis.com`
 
-gcloud auth configure-docker
+`gcloud auth configure-docker`
 
 ++++++++++++++++++++**_2. Clone the source code and build a Docker image_**++++++++++++++++++
 
-git clone https://github.com/quickhair/web-app-container.git
+`git clone https://github.com/quickhair/web-app-container.git`
 
-docker build -t gcr.io/minh-sandbox/web-app-container .
+`docker build -t gcr.io/minh-sandbox/web-app-container .`
 
 Hit Authorize and login to your Goole Clous account if prompted.
 
 gcr.io is one of the hostnames, 'minh-sandbox' is the project ID, see https://cloud.google.com/container-registry/docs/overview for more details. You can check and delete your Docker images with:
 
-docker images
+`docker images`
 
-docker rmi gcr.io/minh-sandbox/web-app-container
+`docker rmi gcr.io/minh-sandbox/web-app-container`
 
 +++++++++++++++++**_3. Push the Docker image to Container Registry_**+++++++++++++++++
 
-docker push gcr.io/minh-sandbox/web-app-container
+`docker push gcr.io/minh-sandbox/web-app-container`
 
 You can search for Container Registry in the Google Cloud console and you'll see the 'web-app-container' repository you've just pushed. Go inside the repository, you'll see your Docker image(s); you can delete them here if you want to.
 
