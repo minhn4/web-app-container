@@ -1,7 +1,7 @@
 # web-app-container
 **_Cloud Shell commands_**
 
-+++++++++++++**_Enable and authenticate Contaner Registry to store Docker images_**+++++++++++++
++++++++++++++**_Enable and authenticate Container Registry to store Docker images_**+++++++++++++
 
 gcloud services enable containerregistry.googleapis.com
 
