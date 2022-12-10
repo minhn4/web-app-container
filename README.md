@@ -2,6 +2,8 @@
 
 **_I. Cloud Shell commands for Docker images_**
 
+Open Cloud Shell (top-right corner)
+
 +++++++++++++**_1. Enable and authenticate Container Registry to store Docker images_**+++++++++++++
 
 gcloud services enable containerregistry.googleapis.com
@@ -26,9 +28,9 @@ You can search for Container Registry in the Google Cloud console and you'll see
 
 **_II. Google Cloud Console: Kubernetes Engine tutorial_**
 
-+++++++++++++++++++++**_1. Create a Kubernetes cluster_**+++++++++++++++++++++++++++++++++
-
 In GC console left menu, go to Kubernetes Engine tab -> Clusters and enable it if you haven't done that.
+
++++++++++++++++++++++**_1. Create a Kubernetes cluster_**+++++++++++++++++++++++++++++++++
 
 Next up, hit Create -> Configure (Standard) -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose Static for Control plane version for now -> Create. Wait until the cluster is available.
 
