@@ -20,6 +20,8 @@ docker build -t gcr.io/minh-sandbox/web-app-container .
 
 docker push gcr.io/minh-sandbox/web-app-container
 
+You can search for Container Registry in the Google Cloud console and you'll see the Docker image you've just pushed.
+
 ----------------------------------------------------------------------------------------------------
 
 **_II. Google Cloud Console: Kubernetes Engine tutorial_**
