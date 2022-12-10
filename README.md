@@ -1,5 +1,4 @@
-# web-app-container
-**_Cloud Shell commands_**
+# Cloud Shell commands
 
 +++++++++++++**_Enable and authenticate Container Registry to store Docker images_**+++++++++++++
 
