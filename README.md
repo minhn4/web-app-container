@@ -30,6 +30,6 @@ In GC console left menu, go to Kubernetes Engine tab -> Clusters and enable it i
 
 Next up, hit Create -> Configure (Standard) -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose Static for Control plane version for now -> Create. Wait until the cluster is available.
 
-++++++++++++++++++**_2. Deploy a Docker image stored in the Container Registry_**+++++++++++++++++++
++++++++++++++++++++++**_2. Deploy a Docker image stored in Container Registry_**++++++++++++++++++++
 
 To deploy the Docker images, hit Workloads tab in the left menu -> Deploy. Next up, choose 'Existing container image' -> Select and then select one of the images stored in the Container Registry -> Continue. Finally, name your app (e.g., demo-web-app), choose the cluster you want to deploy -> Deploy.
