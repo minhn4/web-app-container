@@ -30,7 +30,7 @@ You can check and delete your Docker images with:
 
 `docker push gcr.io/minh-sandbox/web-app-container`
 
-You can search for `Container Registry` in the console search bar and you'll see the 'web-app-container' repository you've just pushed. Go inside the repository, you'll see your Docker images; you can delete them here if you want to.
+You can search for `Container Registry` section in the console search bar and you'll see the 'web-app-container' repository you've just pushed. Go inside the repository, you'll see your Docker images; you can delete them here if you want to.
 
 ----------------------------------------------------------------------------------------------------
 
@@ -38,11 +38,11 @@ You can search for `Container Registry` in the console search bar and you'll see
 
 ### **_1. Create a Kubernetes cluster_**
 
-In the console left menu, go to `Compute Engine` and `Kubernetes Engine` tabs and enable them if you haven't done so.
+In the console left menu, go to `Compute Engine` and `Kubernetes Engine` sections and enable them if you haven't done so.
 
 Next up, go to `Clusters` tab in the `Kubernetes Engine` left menu -> hit `Create` -> `Configure (Standard)` -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose `Static` for `Control plane version` for now -> `Create`. Wait until the cluster is available.
 
-By default, Kubernetes Engine will create a node pool of three VMs initially (you can create more node pool if needed). To view all the node pools and their corresponding nodes (VMs), in `Clusters` tab, click on the name of the cluster you want to view -> `Nodes` tab. You can also view these VMs in `Compute Engine` tab.
+By default, Kubernetes Engine will create a node pool of three VMs initially (you can create more node pool if needed). To view all the node pools and their corresponding nodes (VMs), in `Clusters` tab, click on the name of the cluster you want to view -> `Nodes` tab. You can also view these VMs in `Compute Engine` section.
 
 ### **_2. Deploy an app_**
 
