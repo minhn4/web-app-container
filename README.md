@@ -1,2 +1,2 @@
 # web-app-container
-Just a simple sample of web app container
+A sample of web app container
