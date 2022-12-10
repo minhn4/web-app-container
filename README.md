@@ -22,4 +22,8 @@ docker push gcr.io/minh-sandbox/web-app-container
 
 ----------------------------------------------------------------------------------------------------
 
-**_II. Console UI: Kubernetes Engine tutorial_**
+**_II. Google Cloud Console: Kubernetes Engine tutorial_**
+
+In GC console left menu, go to Kubernetes Engine tab -> Clusters and enable it if you haven't done that.
+
+Next, hit Create -> Configure (Standard) -> name your cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose Static for Control plane version for now -> Create.
