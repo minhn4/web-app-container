@@ -8,7 +8,7 @@ gcloud services enable containerregistry.googleapis.com
 
 gcloud auth configure-docker
 
-++++++++++++++++++++**_2. Clone the source code and build the Docker image_**++++++++++++++++++
+++++++++++++++++++++**_2. Clone the source code and build a Docker image_**++++++++++++++++++
 
 git clone https://github.com/quickhair/web-app-container.git
 
