@@ -14,6 +14,8 @@ Open `Cloud Shell` (top-right corner), then type:
 
 `git clone https://github.com/quickhair/web-app-container.git`
 
+`cd web-app-container/`
+
 `docker build -t gcr.io/minh-sandbox/web-app-container .`
 
 Hit Authorize and login to your Google Cloud account if prompted. Explanation: `gcr.io` is one of the hostnames, `minh-sandbox` is the project ID, see https://cloud.google.com/container-registry/docs/overview for more details.
