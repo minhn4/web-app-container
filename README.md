@@ -20,7 +20,7 @@ docker build -t gcr.io/minh-sandbox/web-app-container .
 
 docker push gcr.io/minh-sandbox/web-app-container
 
-You can search for Container Registry in the Google Cloud console and you'll see the 'web-app-container' repository you've just pushed. Go inside the repository, you'll see your Docker image(s) (you can delete them here if you want).
+You can search for Container Registry in the Google Cloud console and you'll see the 'web-app-container' repository you've just pushed. Go inside the repository, you'll see your Docker image(s); you can delete them here if you want.
 
 ----------------------------------------------------------------------------------------------------
 
