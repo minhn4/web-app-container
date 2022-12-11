@@ -40,7 +40,7 @@ You can search for `Container Registry` section in the console search bar and yo
 
 In the console left menu, go to `Compute Engine` and `Kubernetes Engine` sections and enable them if you haven't done so.
 
-Next up, go to `Clusters` tab in the `Kubernetes Engine` section left menu -> hit `Create` -> `Configure (Standard)` -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose `Static` for `Control plane version` for now -> `Create` (by default, this is a public cluster). Now, wait until the cluster is available.
+Next up, go to `Clusters` tab in the `Kubernetes Engine` section left menu -> hit `Create` -> `Configure (Standard)` -> name your Kubernetes cluster (e.g., production-cluster), choose a zone near you (optional: choose node locations if you want to), choose `Static` for `Control plane version` for now -> `Create` (by default, this is a public cluster). Now, wait until the cluster becomes available.
 
 By default, Kubernetes Engine will create a node pool of three VMs initially (you can create more node pool if needed). To view all the node pools and their corresponding nodes (VMs), in `Clusters` tab, click on the name of the cluster you want to view -> `Nodes` tab. You can also view these VMs in `Compute Engine` section.
 
