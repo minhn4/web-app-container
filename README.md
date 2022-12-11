@@ -55,5 +55,3 @@ Kubernetes Engine will deploy the app in all nodes in the node pool.
 Now, if you want to access this app from outside, you need to expose it to external traffic -> click `Expose` in the top-right corner. Next, you can change/add port mapping and protocol if needed; otherwise, leave it 80:blank:tcp -> choose `Load balancer` for `Service type` and name your service -> `Expose`.
 
 GCP will automatically assign an external IP to this app and you can use that IP address to access the app from outside (e.g., from a browser); the load balancer will distribute the load equally to all the VMs in the node pool. You can view all your app services in the `Services & Ingress` tab.
-
-Now, you can click on the IP address at `External endpoints` line to redirect to your app in your browser.
