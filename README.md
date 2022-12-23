@@ -1,6 +1,6 @@
 # Kubernetes Engine Instruction
 
-## **I. gcloud ommands**
+## **I. gcloud commands**
 
 ### **_1. Enable and authenticate Container Registry to store Docker images_**
 
