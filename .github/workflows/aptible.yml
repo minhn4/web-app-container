@@ -22,4 +22,4 @@ jobs:
         run: |
           ssh-keyscan beta.aptible.com >> ~/.ssh/known_hosts
           git remote add aptible git@beta.aptible.com:${APTIBLE_ENVIRONMENT}/${APTIBLE_APP}.git
-          git push aptible ${GITHUB_SHA}:master
+          git push aptible master
