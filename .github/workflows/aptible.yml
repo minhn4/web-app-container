@@ -1,0 +1,26 @@
+name: Deploy to Aptible
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the code
+      - uses: actions/checkout@v2
+      
+      # Set up the Aptible CLI
+      - name: Set up Aptible CLI
+        uses: aptible/setup-aptible-cli@v1
+      
+      # Authenticate with Aptible
+      - name: Authenticate with Aptible
+        run: aptible login --email=${{ secrets.ENDUE_EMAIL }} --password=${{ secrets.PASSWORD1 }}
+      
+      # Set the Aptible environment
+      - name: Set the Aptible environment
+        run: aptible config:set --app=${{ secrets.APTIBLE_APP_HANDLE }} ENVIRONMENT=${{ secrets.APTIBLE_ENV }}
+      
+      # Deploy the app to Aptible
+      - name: Deploy to Aptible
+        run: aptible deploy
