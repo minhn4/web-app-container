@@ -1,26 +1,25 @@
-name: Deploy to Aptible
+name: Aptible Deployment
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
+
+env:
+  APTIBLE_ENVIRONMENT: ${{ secrets.APTIBLE_ENV }}
+  APTIBLE_APP: ${{ secrets.APTIBLE_APP_HANDLE }}
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Check out the code
       - uses: actions/checkout@v2
-      
-      # Set up the Aptible CLI
-      - name: Set up Aptible CLI
-        uses: aptible/setup-aptible-cli@v1
-      
-      # Authenticate with Aptible
-      - name: Authenticate with Aptible
-        run: aptible login --email=${{ secrets.ENDUE_EMAIL }} --password=${{ secrets.PASSWORD1 }}
-      
-      # Set the Aptible environment
-      - name: Set the Aptible environment
-        run: aptible config:set --app=${{ secrets.APTIBLE_APP_HANDLE }} ENVIRONMENT=${{ secrets.APTIBLE_ENV }}
-      
-      # Deploy the app to Aptible
+        with:
+          fetch-depth: 0
+      - uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.APTIBLE_GIT_SSH_KEY }}
       - name: Deploy to Aptible
-        run: aptible deploy
+        run: |
+          ssh-keyscan beta.aptible.com >> ~/.ssh/known_hosts
+          git remote add aptible git@beta.aptible.com:${APTIBLE_ENVIRONMENT}/${APTIBLE_APP}.git
+          git push aptible ${GITHUB_SHA}:master
