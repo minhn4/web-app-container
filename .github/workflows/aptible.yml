@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 env:
   APTIBLE_ENVIRONMENT: ${{ secrets.APTIBLE_ENV }}
