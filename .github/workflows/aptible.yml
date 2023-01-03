@@ -1,6 +1,4 @@
 
-name: Aptible deployment
-
 on:
   push:
     branches: [ main ]
